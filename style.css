@@ -33,43 +33,59 @@ body{
 }
 
 body {
+    margin: 0;
     background-color: #141414;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .comic-reader {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
-.comic-page {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
 }
 
-.comic-page img {
+.page-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    max-width: 1200px;
 }
 
-.navigator {
+.page {
+    border: 2px solid #fff; /* Add a border around the pages */
+    position: relative;
+    flex: 1; /* Allow pages to take equal space */
+    margin: 0 10px;
+}
+
+.page img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.page-indicator {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
 }
 
-#nextButton {
+.next-button {
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #0C0C0C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #1c1c1c;
 }

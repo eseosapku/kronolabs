@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Comic Reader</title>
 </head>
 <body>
     <div class="comic-reader">
-        <div class="comic-page" id="page1">
-            <img src="images/first-page.jpg" alt="Comic Page 1">
+        <div class="page-container">
+            <div class="page" id="page1">
+                <img src="images/first-page.jpg" alt="Comic Page 1">
+                <div class="page-indicator">Page 1</div>
+            </div>
+            <div class="page" id="page2">
+                <img src="images/second-page.jpg" alt="Comic Page 2">
+                <div class="page-indicator">Page 2</div>
+            </div>
         </div>
-        <div class="comic-page" id="page2">
-            <img src="images/second-page.jpg" alt="Comic Page 2">
-        </div>
-        <div class="navigator">
-            <button id="nextButton">Next Page</button>
-        </div>
+        <button id="nextButton" class="next-button">Next Page</button>
     </div>
     <script src="script.js"></script>
 </body>
