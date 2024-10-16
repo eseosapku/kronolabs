@@ -39,21 +39,22 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 20px;
 }
 
 .page-container {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Change this to flex to arrange pages side by side */
+    justify-content: center; /* Center the pages */
+    align-items: center; /* Center vertically */
     width: 100%;
     max-width: 1200px;
+    margin-bottom: 20px; /* Space between the pages and the button */
 }
 
 .page {
     border: 2px solid #fff; /* Add a border around the pages */
     position: relative;
     flex: 1; /* Allow pages to take equal space */
-    margin: 0 10px;
+    margin: 0 10px; /* Add spacing between the pages */
 }
 
 .page img {
@@ -72,7 +73,6 @@ body {
 }
 
 .next-button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #0C0C0C;
@@ -84,30 +84,4 @@ body {
 
 .next-button:hover {
     background-color: #1c1c1c;
-}
-
-.comic-page {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.comic-page img {
-    width: 100%;
-    height: auto;
-}
-
-.navigator {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-#nextButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
 }
