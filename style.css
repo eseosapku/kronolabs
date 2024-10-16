@@ -31,3 +31,45 @@ body{
 .form-control{
     box-shadow: none !important;
 }
+
+body {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.comic-reader {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.comic-page {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.comic-page img {
+    width: 100%;
+    height: auto;
+}
+
+.navigator {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#nextButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
