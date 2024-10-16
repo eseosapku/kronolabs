@@ -53,7 +53,7 @@ body {
     flex: 1; /* Allow pages to take equal space */
     margin: 0 5px; /* Space between the pages */
     height: 100%; /* Full height to fit the container */
-    max-width: 300px; /* Set a max width for portrait orientation */
+    max-width: 800px; /* Set a max width for portrait orientation */
 }
 
 .page img {
