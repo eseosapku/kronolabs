@@ -19,3 +19,22 @@ function position(id){
   // card.style.transform = 'scale(1.5)';
   console.log(id)
 }
+
+let currentPage = 1;
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    if (currentPage < 2) {
+        document.getElementById('page' + currentPage).style.display = 'none';
+        currentPage++;
+        document.getElementById('page' + currentPage).style.display = 'flex';
+    } else {
+        // Optional: Loop back to the first page or handle end of comic
+        document.getElementById('page' + currentPage).style.display = 'none';
+        currentPage = 1;
+        document.getElementById('page' + currentPage).style.display = 'flex';
+    }
+});
+
+// Initially show the first page
+document.getElementById('page1').style.display = 'flex';
+document.getElementById('page2').style.display = 'none';
