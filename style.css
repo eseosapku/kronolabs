@@ -42,19 +42,18 @@ body {
 }
 
 .page-container {
-    display: flex; /* Change this to flex to arrange pages side by side */
-    justify-content: center; /* Center the pages */
-    align-items: center; /* Center vertically */
+    display: flex; /* Use flex to align the pages horizontally */
+    justify-content: center; /* Center the pages horizontally */
     width: 100%;
-    max-width: 1200px;
-    margin-bottom: 20px; /* Space between the pages and the button */
 }
 
 .page {
     border: 2px solid #fff; /* Add a border around the pages */
     position: relative;
     flex: 1; /* Allow pages to take equal space */
-    margin: 0 10px; /* Add spacing between the pages */
+    margin: 0 5px; /* Space between the pages */
+    height: 100%; /* Full height to fit the container */
+    max-width: 300px; /* Set a max width for portrait orientation */
 }
 
 .page img {
