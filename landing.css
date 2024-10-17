@@ -280,3 +280,14 @@ ul{
       color: rgb(249, 14, 14);
       margin-left: 28px;
 }
+
+.btn-play {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-play:hover {
+    opacity: 0.8;
+}
