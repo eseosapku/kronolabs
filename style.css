@@ -40,8 +40,8 @@ body {
 }
 
 .comic-page {
-    width: 1000%;
-    max-width: 600px; /* Set a max width for the comic page */
+    width: 100%;
+    max-width: 10000px; /* Set a max width for the comic page */
     margin-bottom: 20px;
     position: relative;
 }
